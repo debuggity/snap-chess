@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Chess Learning</title>
+    <!-- Chessboard.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/css/chessboard.min.css" integrity="sha512-Cgf1pHc/h9fDEOqC3hqC2azgSxI2rQnM2WzN9WONc4qvW4E6R7UkVowt3ic3vxM8V+V8BjXc0ZbPnC1H3Glm9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Snap Chess Learning</h1>
+    </header>
+    <main>
+        <div class="lesson-card" id="knightForkCard">
+            <h2>Knight Fork</h2>
+            <p>Master the art of forking with the knight in just 3 minutes!</p>
+        </div>
+    </main>
+
+    <!-- Modal Window -->
+    <div id="lessonModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="lesson">
+                <h2>Knight Fork</h2>
+                <p>A <strong>fork</strong> is a tactic where one piece attacks two or more enemy pieces simultaneously. The <strong>knight fork</strong> is particularly effective because of the knight's unique movement, which can target multiple pieces that are not easily defended.</p>
+                <div id="chessboard"></div>
+                <div class="puzzles">
+                    <h3>Try These Puzzles:</h3>
+                    <button class="puzzle-button" data-puzzle="1">Puzzle 1</button>
+                    <button class="puzzle-button" data-puzzle="2">Puzzle 2</button>
+                    <button class="puzzle-button" data-puzzle="3">Puzzle 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chessboard.js and Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" integrity="sha512-PKxA1YgOjpLlLJcJk6gEHK8aoCUBQXv3ryIR8u4eZtfHoC2PQ1sbxX5lJNznwxOQyLxmSfz1v4Vx7GcjSD0n8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard.js/1.0.0/js/chessboard.min.js" integrity="sha512-d+RLe5lQ5zNMD4P6F4uE1blO8MZP8AnZbQJQBGfnm/FTs4jTeVmTpMZL8gPVaVnlVG2sJuU4/8GwLeChLrby6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
